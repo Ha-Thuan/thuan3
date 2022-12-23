@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/laptop.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/font.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Assignment 02</title>
+  </head>
+  <body>
+    <div id="banner" style="padding: 50px">
+      <div class="name">
+        <h1>Hà Diệu Thuần</h1>
+        <span>Full Stack Developer</span>
+      </div>
+    </div>
+
+    <section id="nav-bar">
+      <div class="avatar">
+        <div class="img-border">
+          <img
+            class="img-profile"
+            src="./images/Thuan avatar.jpg"
+            alt="Ảnh profile của Thuần"
+          />
+        </div>
+      </div>
+      <table class="container">
+        <thead>
+          <tr>
+            <th class="th-nav">
+              <i class="icon-user"></i>
+              <span>Thông tin</span>
+            </th>
+            <th class="th-nav">
+              <i class="icon-doc-text-inv"></i>
+              <span>Lý lịch</span>
+            </th>
+            <th class="space" rowspan="4"></th>
+            <th class="th-nav">
+              <i class="icon-mail-alt"></i>
+              <span>Chứng chỉ</span>
+            </th>
+            <th class="th-nav">
+              <i class="icon-star-1"></i>
+              <span>Dự Án</span>
+            </th>
+          </tr>
+        </thead>
+      </table>
+    </section>
+    <!-- Phần hiển thị cho màn hình điện thoại -->
+    <section id="tablet-screen">
+      <div><i class="icon-user"></i><span>Thông tin</span></div>
+      <div><i class="icon-doc-text-inv"></i><span>Lý lịch</span></div>
+      <div><i class="icon-mail-alt"></i><span>Chứng chỉ</span></div>
+      <div><i class="icon-star-1"></i><span>Dự Án</span></div>
+    </section>
+
+    <!-- Mục tiêu nghề nghiệp và thông tin cá nhân - thêm flex-md-row trong bootstrap để ở điện thoại thì thông tin thành 2 cột -->
+    <section id="about" class="bg-grey flex-md-row">
+      <div id="target">
+        <h2 class="section-title">Mục tiêu nghề nghiệp</h2>
+        <p>
+          Là một sinh viên đã hoàn thành chương trình chứng chỉ Doanh Nghiệp của
+          FUNiX. Em mong muốn mình sẽ được làm việc với vị trí
+          <b>Fullstack Developer</b>, có thể vận dụng những kiến thức đã được
+          trau dồi và không ngừng học hỏi để phát triển bản thân, cũng như hoàn
+          thành tốt nhất công việc được giao.
+        </p>
+      </div>
+      <div id="personal-info">
+        <h2 class="section-title">Thông tin cá nhân</h2>
+        <ul class="mt-40 info">
+          <li><span>Giới tính</span> : Nữ</li>
+          <li><span>Ngày sinh</span> : 20/01/1998</li>
+          <li><span>Điện thoại</span> : (+84) 358353xxx</li>
+          <li><span>Email</span> : Thuan**@funix.edu.vn</li>
+          <li><span>Địa chỉ</span> : Tp.HCM</li>
+          <li><span>Website</span> : https://abc.tech</li>
+        </ul>
+        <i class="icon-twitter"></i>
+        <i class="icon-facebook"></i>
+        <i class="icon-gplus"></i>
+        <i class="icon-linkedin"></i>
+      </div>
+    </section>
+    <!-- Mục tiêu nghề nghiệp và thông tin cá nhân -->
+
+    <!-- Job Info: Chia box để quản lý -->
+    <section id="job-info">
+      <div class="container row">
+        <div class="col flex-box row-cols-lg-3">
+          <div class="f0">
+            <div class="f1">
+              <h3>Kinh nghiệm</h3>
+              <span class="icon-justify"><i class="ic-toolbox f1-2"></i></span>
+            </div>
+            <div>
+              <ul>
+                <li>
+                  <strong>Designer - NNT Studio</strong>
+                  <p>
+                    <em>2021- <span class="bold-year">Hiện tại</span></em>
+                  </p>
+                  <p>- Quản lý fanpage</p>
+                  <p>- Thiết kế ấn phẩm cần thiết</p>
+                  <p>- Biên tập nội dung sách</p>
+                  <p>- Tìm kiếm chủ đề content</p>
+                  <p>- Edit Video cho kênh youtube</p>
+                </li>
+                <br />
+                <li>
+                  <strong>Web Designer - An Bình Agency</strong>
+                  <p><em>2019-2020</em></p>
+                  <p>- Thiết kế landing page</p>
+                  <p>- Thiết kế các ấn phẩm cần thiết đăng lên web</p>
+                  <p>- Thực hiện các yêu cầu của senior</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Phần kỹ năng sẽ tạo các bảng trống để làm level table  -->
+          <div class="f0">
+            <div class="f1">
+              <h3>Kỹ năng</h3>
+              <span class="icon-justify"><i class="ic-tools-2 f1-2"></i></span>
+            </div>
+            <div class="skill">
+              <div>
+                <p>HTML/CSS: Fundamental</p>
+                <div>
+                  <table class="skill-table">
+                    <tbody>
+                      <th class="level-1"></th>
+                      <th class="level-1"></th>
+                      <th class="level-1"></th>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div>
+                <p>Photoshop/AI: Good</p>
+                <div>
+                  <table class="skill-table">
+                    <tbody>
+                      <th class="level-2"></th>
+                      <th class="level-2"></th>
+                      <th class="level-2"></th>
+                    </tbody>
+                  </table>
+                </div>
+
+                <div>
+                  <p>Premiere: Intermediate</p>
+                  <div>
+                    <table class="skill-table">
+                      <tbody>
+                        <th class="level-3"></th>
+                        <th class="level-3"></th>
+                        <th class="level-3"></th>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="f0">
+            <div class="f1">
+              <h3>Ngôn ngữ</h3>
+              <span class="icon-justify"><i class="ic-mic f1-2"></i></span>
+            </div>
+            <div>
+              <div>
+                <p>Tiếng Anh - TOEIC 650</p>
+                <div>
+                  <table class="skill-table">
+                    <tbody>
+                      <th class="level-1"></th>
+                      <th class="level-1"></th>
+                      <th class="level-1"></th>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex-box col row-cols-lg-3">
+          <div class="f0">
+            <div class="f1">
+              <h3>Hoạt động</h3>
+              <span class="icon-justify"><i class="ic-toolbox f1-2"></i></span>
+            </div>
+            <div>
+              <ul>
+                <li>
+                  <strong>Phó Liên chi hội khoa Luật kinh tế</strong>
+                  <p><em>6/2017-6/2018</em></p>
+                  <p>- Quản lý nhân sự hội</p>
+                  <p>- Tổ chức sự kiện và hoạt động cấp khoa</p>
+                  <p>- Thiết kế các ấn phẩm cần thiết</p>
+                </li>
+                <br />
+                <li>
+                  <strong>Đội nhảy trường</strong>
+                  <p><em>9/2016-9/2017</em></p>
+                  <p>- Tham gia các buổi diễn trường</p>
+                  <p>- Thi các cuộc thi do doanh nghiệp tổ chức tại trường</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="f0">
+            <div class="f1">
+              <h3>Học vấn</h3>
+              <span class="icon-justify"><i class="ic-pencil f1-2"></i></span>
+            </div>
+            <div>
+              <ul>
+                <li>
+                  <strong>Cử nhân luật kinh tế - UEL</strong>
+                  <p><em>8/2016-10-2020</em></p>
+                  <p>- Tốt nghiệp loại khá</p>
+                  <p>- Điểm: 7.2</p>
+                </li>
+                <br />
+                <li>
+                  <strong>Chuyên viên thiết kế đồ họa</strong>
+                  <p><em>12/2019-9/2021</em></p>
+                  <p>
+                    - Tốt nghiệp chứng chỉ
+                    <strong>chuyên viên thiết kế đồ họa</strong> tại Trung tâm
+                    tin học - ĐH Khoa học tự nhiên
+                  </p>
+                  <p>
+                    - Tốt nghiệp chứng chỉ
+                    <strong>Branding Design</strong> tại DAS
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Tạo grid để sắp xếp thông tin và bo tròn cho icon  -->
+          <div class="f0">
+            <div class="f1">
+              <h3>Sở thích</h3>
+              <span class="icon-justify"
+                ><i class="ic-telescope f1-2"></i
+              ></span>
+            </div>
+            <div class="f2">
+              <section class="icon-width">
+                <i class="ic-strategy"></i>
+              </section>
+              <section class="icon-width">
+                <i class="ic-megaphone"></i>
+              </section>
+              <section class="icon-width">
+                <i class="ic-hotairballoon"></i>
+              </section>
+              <section class="f2-text">Chơi game</section>
+              <section class="f2-text">Âm nhạc</section>
+              <section class="f2-text">Khám phá</section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="certificate" class="bg-grey">
+      <div class="container">
+        <h2 class="section-title">Chứng chỉ - Giải thưởng</h2>
+        <div class="row row-cols-md-2">
+          <section class="col-md award-box">
+            <div class="row">
+              <div class="img-scale col-md">
+                <img
+                  class="img-fluid"
+                  src="./images/Cert_DBI.png"
+                  alt="chứng chỉ"
+                />
+              </div>
+              <div class="col-md">
+                <p><strong>CHỨNG CHỈ LẬP TRÌNH WEB - FUNIX</strong></p>
+                <p>- Chứng chỉ thuộc chương trình CCDN</p>
+                <p>- GPA: 8.6</p>
+              </div>
+            </div>
+          </section>
+          <section class="col-md award-box">
+            <div class="javascript">
+              <div class="row">
+                <div class="img-scale col-md">
+                  <img
+                    class="img-fluid"
+                    src="./images/Cert_PRF.png"
+                    alt="chứng chỉ"
+                  />
+                </div>
+                <div class="col-md">
+                  <p><strong>CHỨNG CHỈ LẬP TRÌNH JAVASCRIPT - FUNIX</strong></p>
+                  <p>- Chứng chỉ thuộc chương trình CCDN</p>
+                  <p>- GPA: 7.0</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="col-md award-box">
+            <div class="row">
+              <div class="img-scale col-md">
+                <img
+                  class="img-fluid"
+                  src="./images/Cert_WEB.png"
+                  alt="chứng chỉ"
+                />
+              </div>
+              <div class="col-md">
+                <p><strong>CHỨNG CHỈ CHUYÊN VIÊN THIẾT KẾ - DAS</strong></p>
+                <p>- Chứng chỉ thuộc chuyên ngành nhận diện thương hiệu</p>
+                <p>- Xếp loại: Khá</p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+    <!-- Job Info  -->
+    <!-- Chia Dự án thành 3 cột, mỗi cột trong dó lại layout tiếp thành 4 phần  -->
+    <section id="project">
+      <div class="container">
+        <h1 class="section-title">Dự án</h1>
+        <div class="grid-container">
+          <div class="project-detail">
+            <img src="./images/project_1.png" alt="project 1 của Thuần" />
+            <h1>CV CÁ NHÂN</h1>
+            <div class="box3">
+              <span><p class="bold-year">2021</p></span>
+              <span><i class="icon-user-1"></i>FUNiX</span>
+              <span><i class="icon-lamp"></i>Developer</span>
+            </div>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Mô tả</td>
+                  <td>
+                    Trang web CV cá nhân. Gồm thông tin cá nhân và kỹ năng nghề
+                    nghiệp
+                  </td>
+                </tr>
+                <tr>
+                  <td>Nhiệm vụ</td>
+                  <td>
+                    - Phát triển code - Review code - Tối ưu code - Xử lý lỗi
+                  </td>
+                </tr>
+                <tr>
+                  <td>Công nghệ</td>
+                  <td>-HTML, CSS</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="project-detail">
+            <img src="./images/project_2.png" alt="project 2 của Thuần" />
+            <h1>TRANG WEB QUẢN LÝ THÚ CƯNG</h1>
+            <div class="box3">
+              <span><p class="bold-year">2021</p></span>
+              <span><i class="icon-user-1"></i>FUNiX</span>
+              <span><i class="icon-lamp"></i>Developer</span>
+            </div>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Mô tả</td>
+                  <td>
+                    Trang web CV cá nhân. Gồm thông tin cá nhân và kỹ năng nghề
+                    nghiệp
+                  </td>
+                </tr>
+                <tr>
+                  <td>Nhiệm vụ</td>
+                  <td>
+                    - Phát triển code - Review code - Tối ưu code - Xử lý lỗi
+                  </td>
+                </tr>
+                <tr>
+                  <td>Công nghệ</td>
+                  <td>-HTML, CSS</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="project-detail">
+            <img src="./images/project_3.png" alt="project 3 của Thuần" />
+            <h1>TRANG WEB XEM TIN TỨC</h1>
+            <div class="box3">
+              <span><p class="bold-year">2021</p></span>
+              <span><i class="icon-user-1"></i>FUNiX</span>
+              <span><i class="icon-lamp"></i>Developer</span>
+            </div>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Mô tả</td>
+                  <td>
+                    Trang web CV cá nhân. Gồm thông tin cá nhân và kỹ năng nghề
+                    nghiệp
+                  </td>
+                </tr>
+                <tr>
+                  <td>Nhiệm vụ</td>
+                  <td>
+                    - Phát triển code - Review code - Tối ưu code - Xử lý lỗi
+                  </td>
+                </tr>
+                <tr>
+                  <td>Công nghệ</td>
+                  <td>-HTML, CSS</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Đổi danh sách thành các span để dàn hàng. Không cần tới ul  -->
+    <section id="footer" class="bg-grey">
+      <div class="container">
+        <span class="social"
+          ><i class="icon-facebook-circled"></i><a href="#">Facebook</a></span
+        >
+        <span class="social"
+          ><i class="icon-linkedin-circled"></i><a href="#">Linkedin</a></span
+        >
+        <span class="social"
+          ><i class="icon-github-circled"></i><a href="#">Github</a></span
+        >
+      </div>
+    </section>
+  </body>
+</html>
